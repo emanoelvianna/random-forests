@@ -1,6 +1,0 @@
-digraph {
-	graph [fontsize=4]
-	node [fontname=Arial style=filled]
-	edge [fontname=Arial]
-	Hello -> World
-}

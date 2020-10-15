@@ -1,4 +1,9 @@
 digraph G {
-	Tempo -> Umidade [label="Ensolarado, ganho: 0.970"]
-	Tempo -> Nublado [label="Ensolarado, ganho: 0.970"]
+	"Tempo, ganho 0.970" -> Umidade [label="Ensolarado, ganho: 0.970"]
+	Umidade -> "Não" [label=Alta]
+	Umidade -> Sim [label=Normal]
+	"Tempo, ganho 0.970" -> Sim [label=Nublado]
+	"Tempo, ganho 0.970" -> Ventoso [label="Nublado, ganho: 0.970"]
+	Ventoso -> Sim [label=Falso]
+	Ventoso -> Nao [label=Verdadeiro]
 }
